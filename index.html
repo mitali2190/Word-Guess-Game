@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hangman Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header title-bg">
+            <img class="img img-responsive image-size" src="http://www.roomrecess.com/Pictures/HangmanTitle.png">
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 sect1">
+                <img class="img img-responsive image-word" src="https://www.askideas.com/media/13/Welcome-Picture.jpg" id="imageid">
+            </div>
+            <div class="col-md-5 col-md-offsest-1 col-md-offset-1 sect1">
+                <h3><strong>Press any key to get started</strong></h3>
+                <strong>Wins: <label id="win"></label></strong><br />
+                <strong>Loss: <label id="loss"></label></strong><br />
+                <strong>Number of Guesses left: <label id="guess_left"></label></strong>
+                <h3>CURRENT WORD</h3>
+                <div id="dash_span"></div>
+                <p><strong>Letters already guessed</strong></p>
+                <label id="letter_exist"></label>
+                <p id="err_msg"></p>
+
+                <input type="submit" class="btn btn-primary btn-reset" value="Reset Game" onclick="newGame()" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
